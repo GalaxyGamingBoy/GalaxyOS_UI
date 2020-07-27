@@ -109,6 +109,8 @@ public class LoginScreen {
                     }else {
                         System.out.println("Access Granted");
                         statusLabel.setText("Access Granted");
+                        CoreOS.OS();
+                        window.close();
                     }
                 }
             } catch (FileNotFoundException fileNotFoundException) {
